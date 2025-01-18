@@ -1,5 +1,5 @@
 let chars, particles, canvas, ctx, w, h, current;
-let duration = 10000;
+let duration = 5000; // Ajusta la duración a 5 segundos
 let str = ['FELIZ', 'CUMPLE', 'NALLELY', '20<3'];
 
 // Declaración del elemento de audio para la música
