@@ -1,10 +1,10 @@
+
 let chars, particles, canvas, ctx, w, h, current;
 let duration = 5000; // Ajusta la duración a 5 segundos
 let str = ['FELIZ', 'CUMPLE', 'NALLELY', '20<3'];
 
 // Declaración del elemento de audio para la música
 let music = new Audio('cumpleaños.mp3');
-music.loop = true; // Reproducir música en bucle
 
 // Inicialización al hacer clic en el botón
 document.getElementById('start-btn').addEventListener('click', function() {
