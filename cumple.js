@@ -4,6 +4,7 @@ let str = ['FELIZ', 'CUMPLE', 'NALLELY', '20<3'];
 
 // Declaración del elemento de audio para la música
 let music = new Audio('cumpleaños.mp3');
+music.loop = true; // Reproducir música en bucle
 
 // Inicialización al hacer clic en el botón
 document.getElementById('start-btn').addEventListener('click', function() {
