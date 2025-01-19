@@ -1,12 +1,12 @@
 let chars, particles, canvas, ctx, w, h, current;
-let duration = 10000;
+let duration = 5000; // Ajusta la duración a 5 segundos
 let str = ['FELIZ', 'CUMPLE', 'NALLELY', '20<3'];
 
 // Declaración del elemento de audio para la música
 let music = new Audio('cumpleaños.mp3');
 
-// Inicialización al hacer clic en el botón
-document.getElementById('start-btn').addEventListener('click', function() {
+// Iniciar la música y la animación al cargar la página
+window.addEventListener('load', function() {
     if (!canvas) {
         init();
         resize();
@@ -14,9 +14,6 @@ document.getElementById('start-btn').addEventListener('click', function() {
     }
     music.currentTime = 0; // Reiniciar la música
     music.play(); // Iniciar la reproducción de la música
-    
-    // Ocultar el botón después de hacer clic
-    this.style.display = 'none';
 });
 
 // Función para crear los caracteres y partículas de fuegos artificiales
