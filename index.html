@@ -12,11 +12,27 @@
             justify-content: center;
             align-items: center;
         }
+
+        #start-btn {
+            position: absolute;
+            padding: 10px 20px;
+            font-size: 20px;
+            color: white;
+            background: #ff4081;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #start-btn:hover {
+            background: #e91e63;
+        }
     </style>
 </head>
 <body>
     <!-- Elementos HTML -->
-    <audio id="music" src="cumpleaños.mp3" autoplay loop></audio>
+    <audio id="music" src="cumpleaños.mp3" loop></audio>
+    <button id="start-btn">🎵 Iniciar Música 🎵</button>
     <script src="cumple.js"></script>
 </body>
 </html>
